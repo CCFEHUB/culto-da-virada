@@ -203,10 +203,10 @@ a{color:inherit}
 .dress h2{font-size:clamp(44px,11vw,104px);max-width:10ch}
 .dress p.lead{max-width:44ch;color:var(--bege-areia);margin:18px 0 0}
 /* Tons de tecido: só derivados do tokens.css */
-.dress{--tec-vinho:color-mix(in srgb,var(--vinho-profundo) 75%,var(--vinho));--tec-bordo:var(--vinho);--tec-marsala:color-mix(in srgb,var(--vinho) 62%,var(--bege-areia));--tec-offwhite:var(--bege-claro);--tec-marfim:color-mix(in srgb,var(--bege-claro) 78%,var(--bege-areia));--tec-creme:color-mix(in srgb,var(--bege-claro) 50%,var(--bege-areia));--tec-areia:var(--bege-areia)}
+.dress{--tec-vinho:color-mix(in srgb,var(--vinho-profundo) 75%,var(--vinho));--tec-bordo:var(--vinho);--tec-marsala:color-mix(in srgb,var(--vinho) 62%,var(--bege-areia));--tec-offwhite:var(--bege-claro);--tec-marfim:color-mix(in srgb,var(--bege-claro) 78%,var(--bege-areia));--tec-creme:color-mix(in srgb,var(--bege-claro) 50%,var(--bege-areia));--tec-areia:var(--bege-areia);--tec-dourado:var(--dourado);--tec-dourado-claro:color-mix(in srgb,var(--dourado-brilho) 60%,var(--dourado))}
 .dress-defs{position:absolute;width:0;height:0;overflow:hidden}
 .tec-vinho{fill:var(--tec-vinho)}.tec-bordo{fill:var(--tec-bordo)}.tec-marsala{fill:var(--tec-marsala)}
-.tec-offwhite{fill:var(--tec-offwhite)}.tec-marfim{fill:var(--tec-marfim)}.tec-creme{fill:var(--tec-creme)}.tec-areia{fill:var(--tec-areia)}
+.tec-offwhite{fill:var(--tec-offwhite)}.tec-marfim{fill:var(--tec-marfim)}.tec-creme{fill:var(--tec-creme)}.tec-areia{fill:var(--tec-areia)}.tec-dourado{fill:var(--tec-dourado)}.tec-dourado-claro{fill:var(--tec-dourado-claro)}
 .fio-claro{fill:var(--bege-claro);opacity:.08}.fio-escuro{fill:var(--vinho-profundo);opacity:.045}
 .vol-sombra{stop-color:var(--noite)}.vol-luz{stop-color:var(--bege-claro)}
 /* Arara de loja: a luz da página passa por .swatches.
@@ -239,6 +239,7 @@ a{color:inherit}
 .cartela-grupo{margin:20px 0 9px;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--bege-areia)}
 .amostras{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 9px}
 .amostras li{display:flex;flex-direction:column;gap:7px;font-size:12.5px;line-height:1.25;color:var(--bege-claro)}
+.amostras-3{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:18px}
 .amostras svg{display:block;width:100%;height:auto;filter:drop-shadow(0 3px 4px rgba(0,0,0,.5))}
 .amostras li:nth-child(2) svg{transform:rotate(1.5deg)}
 .amostras li:nth-child(3) svg{transform:rotate(-1deg)}
@@ -285,7 +286,7 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
     <div class="hero-copy" id="heroCopy">
       <span class="hero-tag"><i aria-hidden="true"></i>31 de dezembro · de 2026 para 2027</span>
       <h1 class="hero-title"><span class="hero-event">Culto da Virada</span><span class="hero-theme">Do <span class="gold">Alto</span></span></h1>
-      <p class="hero-sub">A família inteira olhando para onde vem o socorro.</p>
+      <p class="hero-sub">A família inteira olhando para de onde vem o socorro.</p>
     </div>
     <div class="verse" id="verse"><p>Elevo os olhos para os montes. De onde vem o meu socorro?</p><small>Salmo 121.1</small></div>
     <div class="verse" id="verse2"><p>O meu socorro vem do <span class="gold">Senhor</span>.</p><small>Salmo 121.2</small></div>
@@ -313,7 +314,7 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
     <h2 id="t-info" class="reveal">A virada é em <span class="gold">família</span>.</h2>
     <div class="facts">
       <div class="fact reveal"><div class="k">Quando</div><div class="v">31 de dezembro</div><div class="small">Horário a confirmar</div></div>
-      <div class="fact reveal"><div class="k">Quem vem</div><div class="v">Todo mundo de casa</div><div class="small">Uma inscrição por família</div></div>
+      <div class="fact reveal"><div class="k">Quem vem</div><div class="v">Todas as famílias da CCFE</div><div class="small">Uma inscrição por família</div></div>
       <div class="fact reveal"><div class="k">A ceia</div><div class="v">Cada família leva uma carne</div><div class="small">Você escolhe na inscrição</div></div>
     </div>
   </div>
@@ -322,7 +323,7 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
 <section class="dress" aria-labelledby="t-dress">
   <div class="wrap">
     <h2 id="t-dress" class="reveal">As cores da <span class="gold">noite</span>.</h2>
-    <p class="lead reveal">Para o Culto da Virada, venha de vinho ou off-white. Vale a família inteira combinar.</p>
+    <p class="lead reveal">Para o Culto da Virada, venha de vinho, dourado ou off-white. Vale a família inteira combinar.</p>
 
     <!-- Texturas compartilhadas pelas peças e pela cartela -->
     <svg class="dress-defs" aria-hidden="true" focusable="false">
@@ -365,50 +366,50 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
           <figcaption>Vinho</figcaption>
         </figure>
         <figure class="peca" style="--tilt:-1deg;--i:2">
-          <svg viewBox="0 0 120 154" role="img" aria-label="Suéter creme">
+          <svg viewBox="0 0 120 154" role="img" aria-label="Suéter dourado">
             <use href="#cabide-ombro" class="cabide"/>
-            <use href="#f-sueter" class="tec-creme"/><use href="#f-sueter" fill="url(#sarja-escura)"/><use href="#f-sueter" fill="url(#volume)" opacity=".55"/><use href="#f-sueter" filter="url(#trama)" opacity=".12"/>
+            <use href="#f-sueter" class="tec-dourado"/><use href="#f-sueter" fill="url(#sarja-escura)"/><use href="#f-sueter" fill="url(#volume)" opacity=".55"/><use href="#f-sueter" filter="url(#trama)" opacity=".12"/>
             <path class="costura" d="M48 31 Q60 40 72 31 M32 138 H88 M13 132 L28.5 134 M107 132 L91.5 134"/>
             <path class="costura" opacity=".7" d="M52 52 Q49 60 52 68 Q55 76 52 84 Q49 92 52 100 Q55 108 52 116 Q49 124 52 132 M68 52 Q71 60 68 68 Q65 76 68 84 Q71 92 68 100 Q65 108 68 116 Q71 124 68 132"/>
           </svg>
-          <figcaption>Creme</figcaption>
+          <figcaption>Dourado</figcaption>
         </figure>
         <figure class="peca" style="--tilt:2deg;--i:3">
-          <svg viewBox="0 0 120 240" role="img" aria-label="Vestido bordô">
+          <svg viewBox="0 0 120 240" role="img" aria-label="Vestido vinho">
             <use href="#cabide-ombro" class="cabide"/>
             <use href="#f-vestido" class="tec-bordo"/><use href="#f-vestido" fill="url(#sarja-clara)"/><use href="#f-vestido" fill="url(#volume)"/><use href="#f-vestido" filter="url(#trama)" opacity=".22"/>
             <path class="costura" opacity=".4" d="M45 90 Q60 93 75 90"/>
             <path class="dobra" d="M55 94 Q52 160 42 228 M65 94 Q68 160 78 228 M60 96 Q60 160 60 231"/>
           </svg>
-          <figcaption>Bordô</figcaption>
+          <figcaption>Vinho</figcaption>
         </figure>
         <figure class="peca" style="--tilt:-1.5deg;--i:4">
-          <svg viewBox="0 0 120 166" role="img" aria-label="Camisa marfim">
+          <svg viewBox="0 0 120 166" role="img" aria-label="Camisa off-white">
             <use href="#cabide-ombro" class="cabide"/>
             <use href="#f-camisa" class="tec-marfim"/><use href="#f-camisa" fill="url(#sarja-escura)"/><use href="#f-camisa" fill="url(#volume)" opacity=".55"/><use href="#f-camisa" filter="url(#trama)" opacity=".1"/>
             <path class="costura" d="M60 46 V158 M11.4 124 L25.4 127 M108.6 124 L94.6 127"/>
             <circle class="botao" cx="60" cy="56" r="1.3"/><circle class="botao" cx="60" cy="74" r="1.3"/><circle class="botao" cx="60" cy="92" r="1.3"/><circle class="botao" cx="60" cy="110" r="1.3"/><circle class="botao" cx="60" cy="128" r="1.3"/><circle class="botao" cx="60" cy="146" r="1.3"/>
             <path class="gola" d="M49 30 L60 40 L54 47 L45 34 Z M71 30 L60 40 L66 47 L75 34 Z"/>
           </svg>
-          <figcaption>Marfim</figcaption>
+          <figcaption>Off-white</figcaption>
         </figure>
         <figure class="peca" style="--tilt:1deg;--i:5">
-          <svg viewBox="0 0 120 162" role="img" aria-label="Saia marsala">
+          <svg viewBox="0 0 120 162" role="img" aria-label="Saia dourada">
             <use href="#cabide-prendedor" class="cabide"/>
-            <use href="#f-saia" class="tec-marsala"/><use href="#f-saia" fill="url(#sarja-clara)"/><use href="#f-saia" fill="url(#volume)"/><use href="#f-saia" filter="url(#trama)" opacity=".2"/>
+            <use href="#f-saia" class="tec-dourado-claro"/><use href="#f-saia" fill="url(#sarja-escura)"/><use href="#f-saia" fill="url(#volume)"/><use href="#f-saia" filter="url(#trama)" opacity=".2"/>
             <path class="costura" opacity=".5" d="M40 36 H80"/>
             <path class="dobra" d="M50 37 L42 151 M60 37 V155 M70 37 L78 151"/>
             <rect class="prendedor" x="41" y="22" width="5" height="11" rx="1"/><rect class="prendedor" x="74" y="22" width="5" height="11" rx="1"/>
           </svg>
-          <figcaption>Marsala</figcaption>
+          <figcaption>Dourado</figcaption>
         </figure>
         <figure class="peca" style="--tilt:-2.5deg;--i:6">
-          <svg viewBox="0 0 120 138" role="img" aria-label="Camiseta areia">
+          <svg viewBox="0 0 120 138" role="img" aria-label="Camiseta vinho">
             <use href="#cabide-ombro" class="cabide"/>
-            <use href="#f-camiseta" class="tec-areia"/><use href="#f-camiseta" fill="url(#sarja-escura)"/><use href="#f-camiseta" fill="url(#volume)" opacity=".55"/><use href="#f-camiseta" filter="url(#trama)" opacity=".12"/>
+            <use href="#f-camiseta" class="tec-marsala"/><use href="#f-camiseta" fill="url(#sarja-clara)"/><use href="#f-camiseta" fill="url(#volume)" opacity=".55"/><use href="#f-camiseta" filter="url(#trama)" opacity=".12"/>
             <path class="costura-escura" d="M48 30 Q60 40 72 30 M38 124 H82"/>
           </svg>
-          <figcaption>Areia</figcaption>
+          <figcaption>Vinho</figcaption>
         </figure>
       </div>
     </div>
@@ -416,21 +417,12 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
 
     <div class="cartela reveal" role="group" aria-labelledby="cartela-titulo">
       <div class="cartela-topo"><b id="cartela-titulo">Cartela de tecidos</b><span>Culto da Virada 2027</span></div>
-      <p class="cartela-grupo">Vinho</p>
-      <ul class="amostras">
-        <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-vinho"/><use href="#picote" fill="url(#sarja-clara)"/><use href="#picote" filter="url(#trama)" opacity=".22"/></svg>Vinho</li>
-        <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-bordo"/><use href="#picote" fill="url(#sarja-clara)"/><use href="#picote" filter="url(#trama)" opacity=".22"/></svg>Bordô</li>
-        <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-marsala"/><use href="#picote" fill="url(#sarja-clara)"/><use href="#picote" filter="url(#trama)" opacity=".22"/></svg>Marsala</li>
-      </ul>
-      <p class="cartela-grupo">Off-white</p>
-      <ul class="amostras">
+      <ul class="amostras amostras-3">
+        <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-bordo"/><use href="#picote" fill="url(#sarja-clara)"/><use href="#picote" filter="url(#trama)" opacity=".22"/></svg>Vinho</li>
+        <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-dourado"/><use href="#picote" fill="url(#sarja-escura)"/><use href="#picote" filter="url(#trama)" opacity=".14"/></svg>Dourado</li>
         <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-offwhite"/><use href="#picote" fill="url(#sarja-escura)"/><use href="#picote" filter="url(#trama)" opacity=".1"/></svg>Off-white</li>
-        <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-marfim"/><use href="#picote" fill="url(#sarja-escura)"/><use href="#picote" filter="url(#trama)" opacity=".1"/></svg>Marfim</li>
-        <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-creme"/><use href="#picote" fill="url(#sarja-escura)"/><use href="#picote" filter="url(#trama)" opacity=".1"/></svg>Creme</li>
-        <li><svg viewBox="0 0 100 60" aria-hidden="true"><use href="#picote" class="tec-areia"/><use href="#picote" fill="url(#sarja-escura)"/><use href="#picote" filter="url(#trama)" opacity=".1"/></svg>Areia</li>
       </ul>
     </div>
-    <p class="detalhe-dourado reveal"><i aria-hidden="true"></i>Dourado só nos detalhes: brinco, relógio, cinto ou gravata.</p>
   </div>
 </section>
 
@@ -476,8 +468,8 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
 const API_URL = "https://script.google.com/macros/s/AKfycbzPanMwb6ugDvWIXc40eFL53atPFDDYBPf63-1KL3X1Pip7WinA9NgGr0RcJFxpajbl/exec";
 // Usados só no modo de teste. Com API_URL preenchida, carnes e Pix vêm do Code.gs.
 const TESTE = {
-  carnes:[{tipo:"Peru ou chester",restantes:4},{tipo:"Costelinha assada",restantes:2},{tipo:"Pernil assado",restantes:0},{tipo:"Tender",restantes:3}],
-  pagamento:{ativo:true,modo:"familia",valor:20,checkout:true},limite:136,lugares:88
+  carnes:[{tipo:"Ave natalina (peru ou chester)",grupo:"ave",restantes:4},{tipo:"Costelinha 3 kg",grupo:"pequena",restantes:2},{tipo:"Pernil",grupo:"grande",restantes:0},{tipo:"Tender 2 kg",grupo:"pequena",restantes:3},{tipo:"Lagarto recheado 2 kg",grupo:"pequena",restantes:1}],
+  pagamento:{ativo:true,valor:20,checkout:true},limite:136,lugares:88
 };
 /* ======================================================== */
 
@@ -570,57 +562,93 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll(".reveal").forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add("pre");io.observe(el)}});
 
 /* ===================== INSCRIÇÃO ===================== */
-function fitNames(){const f=(a,n)=>{a.length=Math.min(a.length,n);while(a.length<n)a.push("")};f(st.nomesA,st.adultos);f(st.nomesC,st.criancas);if(!st.nomesA[0])st.nomesA[0]=st.nome.trim()}
-const st={nomesA:[],nomesC:[],lugares:999,step:0,nome:"",whats:"",adultos:2,criancas:0,pessoas:2,carne:"",carnes:[],pag:null,aviso:"",res:null};
+// Faixas de idade:
+//   a = adultos e crianças acima de 8 anos (inteira)
+//   b = crianças de 4 a 8 anos (meia)
+//   c = crianças até 4 anos (não pagam, não contam para a carne nem para os 136 lugares)
+const GRUPOS={
+  a:{k:"adultos",nomes:"nomesA",rot:"Adultos e crianças acima de 8 anos",dica:"Valor inteiro, contando você",min:1,ph:"Pessoa"},
+  b:{k:"c48",nomes:"nomesB",rot:"Crianças de 4 a 8 anos",dica:"Pagam meia",min:0,ph:"Criança"},
+  c:{k:"c04",nomes:"nomesC",rot:"Crianças até 4 anos",dica:"Não pagam e não contam para a carne",min:0,ph:"Criança"}};
+const LETICIA="5561984589268";
+const st={nomesA:[],nomesB:[],nomesC:[],lugares:999,step:0,nome:"",whats:"",adultos:2,c48:0,c04:0,carne:"",carne2:"",carnes:[],pag:null,aviso:"",res:null};
+const pc=()=>st.adultos+st.c48;                       // pessoas para a carne
+const faixa=n=>n<=3?"ate3":n<=5?"4a5":"6mais";
+function fitNames(){const f=(a,n)=>{a.length=Math.min(a.length,n);while(a.length<n)a.push("")};f(st.nomesA,st.adultos);f(st.nomesB,st.c48);f(st.nomesC,st.c04);if(!st.nomesA[0])st.nomesA[0]=st.nome.trim()}
 const box=$("#steps");
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const dig=s=>s.replace(/\D/g,"");
 const fone=d=>{d=d.slice(0,11);if(d.length<3)return d;if(d.length<7)return`(${d.slice(0,2)}) ${d.slice(2)}`;return`(${d.slice(0,2)}) ${d.slice(2,d.length-4)}-${d.slice(-4)}`};
 const brl=v=>v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
 const sobrenome=n=>{const p=n.trim().split(/\s+/);return p.length>1?p[p.length-1]:p[0]};
-const total=()=>st.res&&st.res.valor!=null?Number(st.res.valor):(!st.pag||!st.pag.ativo?0:(st.pag.modo==="pessoa"?st.pag.valor*st.pessoas:st.pag.modo==="adulto"?st.pag.valor*st.adultos:st.pag.valor));
+const valorDe=(a,b)=>!st.pag||!st.pag.ativo?0:Math.round((st.pag.valor*a+st.pag.valor/2*b)*100)/100;
+const total=()=>st.res&&st.res.valor!=null&&st.res.valor!==""?Number(st.res.valor):valorDe(st.adultos,st.c48);
+const grupos=(a,b,c)=>[`<b>${a}</b> acima de 8 anos`,b?`<b>${b}</b> de 4 a 8`:"",c?`<b>${c}</b> até 4`:""].filter(Boolean).join(", ");
+const leva=r=>r.carne+(r.carne2?" + "+r.carne2:"");
+
+/* Carnes permitidas para o tamanho da família (pessoas para a carne) */
+function opcoes(){const f=faixa(pc()),g=x=>st.carnes.filter(c=>x.includes(c.grupo));
+  if(f==="ate3")return{f,lista:g(["pequena"]),dica:"Para até 3 pessoas: escolha 1 carne."};
+  if(f==="4a5")return{f,lista:g(["ave","grande"]),dica:"Para 4 ou 5 pessoas: escolha 1 entre ave natalina e pernil."};
+  return{f,ave:g(["ave"])[0],lista:g(["pequena"]),dica:"Para 6 pessoas ou mais: a ave natalina é obrigatória, mais 1 carne pequena."}}
+function semOpcao(o){const tem=o.lista.some(c=>c.restantes>0);return o.f==="6mais"?(!o.ave||o.ave.restantes<=0||!tem):!tem}
+function ajustarCarnes(){const o=opcoes(),vale=t=>o.lista.some(c=>c.tipo===t&&c.restantes>0);
+  if(o.f==="6mais"){st.carne=o.ave&&o.ave.restantes>0?o.ave.tipo:"";if(!vale(st.carne2))st.carne2=""}
+  else{if(!vale(st.carne))st.carne="";st.carne2=""}}
 
 async function load(){
   if(!API_URL){$("#demoTag").hidden=false;st.carnes=TESTE.carnes.map(c=>({...c}));st.pag=TESTE.pagamento;st.lugares=TESTE.lugares;showProof(TESTE.lugares,TESTE.limite,true);return}
   const j=await (await fetch(API_URL)).json();st.carnes=j.carnes;st.pag=j.pagamento||{ativo:false};if(j.limite){st.lugares=j.lugares;showProof(j.lugares,j.limite,false)}
 }
 function err(id,m){const e=$("#"+id);if(e)e.textContent=m;return!m}
+function infoFamilia(){const n=pc(),v=valorDe(st.adultos,st.c48);
+  return`Para a carne: <b>${n}</b> ${n===1?"pessoa":"pessoas"}${st.pag&&st.pag.ativo?` · Valor: <b>${brl(v)}</b>`:""}`}
 
 function render(){let h="";
   if(st.step===0&&st.lugares<=0)h=`<div class="step"><h3>Inscrições encerradas</h3><p class="small">Todos os 136 lugares foram preenchidos. Fale com a Letícia se precisar de ajuda.</p></div>`;
-  else if(st.step===0)h=`<div class="step"><div class="stepno">1 de 3</div><h3>Sua família</h3>
+  else if(st.step===0){const cont=(t,last)=>{const G=GRUPOS[t];
+      return`<div class="counter"${last?"":` style="margin-bottom:10px"`}><span class="lbl">${G.rot}<small>${G.dica}</small></span><div class="ctl"><button type="button" aria-label="Menos uma pessoa: ${G.rot}" data-k="${G.k}" data-d="-1">−</button><output id="o-${G.k}">${st[G.k]}</output><button type="button" aria-label="Mais uma pessoa: ${G.rot}" data-k="${G.k}" data-d="1">+</button></div></div>`};
+    h=`<div class="step"><div class="stepno">1 de 3</div><h3>Sua família</h3>
     <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" autocomplete="name" placeholder="Ana Oliveira" value="${esc(st.nome)}"><div class="err" id="e-nome"></div></div>
     <div class="field"><label for="f-whats">Seu WhatsApp</label><input id="f-whats" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(61) 99999-0000" value="${esc(fone(st.whats))}"><div class="err" id="e-whats"></div></div>
-    <div class="counter" style="margin-bottom:10px"><span class="lbl">Adultos<small>13 anos ou mais, contando você</small></span><div class="ctl"><button type="button" aria-label="Menos um adulto" data-k="adultos" data-d="-1">−</button><output id="o-adultos">${st.adultos}</output><button type="button" aria-label="Mais um adulto" data-k="adultos" data-d="1">+</button></div></div>
-    <div class="counter"><span class="lbl">Crianças<small>Até 12 anos</small></span><div class="ctl"><button type="button" aria-label="Menos uma criança" data-k="criancas" data-d="-1">−</button><output id="o-criancas">${st.criancas}</output><button type="button" aria-label="Mais uma criança" data-k="criancas" data-d="1">+</button></div></div>
-    <div class="err" id="e-fam" style="margin:-18px 0 22px"></div>
-    <button class="btn btn-gold btn-wide" id="next">Continuar</button></div>`;
-  if(st.step===3){const inp=(t,i,ph)=>`<input id="n-${t}-${i}" data-nt="${t}" data-ni="${i}" autocomplete="off" placeholder="${ph}" value="${esc((t==="a"?st.nomesA:st.nomesC)[i]||"")}">`;
+    ${cont("a")}${cont("b")}${cont("c",true)}
+    <p class="small" id="pcInfo" style="margin:-16px 0 22px">${infoFamilia()}</p>
+    <div class="err" id="e-fam" style="margin:-14px 0 22px"></div>
+    <button class="btn btn-gold btn-wide" id="next">Continuar</button></div>`}
+  if(st.step===3){const inp=(t,i,ph)=>`<input id="n-${t}-${i}" data-nt="${t}" data-ni="${i}" autocomplete="off" placeholder="${ph}" value="${esc(st[GRUPOS[t].nomes][i]||"")}">`;
+    const blocos=["a","b","c"].filter(t=>st[GRUPOS[t].k]>0).map(t=>`<div class="ngroup">${GRUPOS[t].rot}</div>${st[GRUPOS[t].nomes].map((_,i)=>inp(t,i,t==="a"&&i===0?"Seu nome":`${GRUPOS[t].ph} ${i+1}`)).join("")}`).join("");
     h=`<div class="step"><div class="stepno">2 de 3</div><h3>Quem vai?</h3>
     <p class="small" style="margin:-14px 0 24px">Escreva o nome de cada pessoa da família. Ajuda a gente a receber todo mundo pelo nome.</p>
-    <div class="names"><div class="ngroup">Adultos</div>${st.nomesA.map((_,i)=>inp("a",i,i===0?"Seu nome":`Adulto ${i+1}`)).join("")}
-    ${st.criancas?`<div class="ngroup">Crianças</div>${st.nomesC.map((_,i)=>inp("c",i,`Criança ${i+1}`)).join("")}`:""}</div>
+    <div class="names">${blocos}</div>
     <div class="err" id="e-nomes"></div>
     <button class="btn btn-gold btn-wide" id="next3" style="margin-top:22px">Escolher a carne</button>
     <button class="back" id="back3">Voltar</button></div>`}
-  if(st.step===1){const cards=st.carnes.map(c=>{const out=c.restantes<=0,low=!out&&c.restantes<=2;
-      return`<button type="button" class="meat${out?" out":""}${low?" low":""}" data-meat="${esc(c.tipo)}" aria-pressed="${st.carne===c.tipo}"${out?' aria-disabled="true"':""}><span class="n">${esc(c.tipo)}</span><span class="q">${out?"Esgotado":`<b>${c.restantes}</b> ${c.restantes===1?"vaga":"vagas"}`}</span></button>`}).join("");
-    h=`<div class="step"><div class="stepno">3 de 3</div><h3>Qual carne vocês levam?</h3>
+  if(st.step===1){ajustarCarnes();const o=opcoes(),vazio=semOpcao(o),n=pc();
+    const card=(c,slot,sel,fixa)=>{const out=c.restantes<=0,low=!out&&c.restantes<=2,vagas=`<b>${c.restantes}</b> ${c.restantes===1?"vaga":"vagas"}`;
+      return`<button type="button" class="meat${out?" out":""}${low?" low":""}" data-meat="${esc(c.tipo)}" data-slot="${slot}"${fixa?' data-fixa="1"':""} aria-pressed="${sel}"${out?' aria-disabled="true"':""}><span class="n">${esc(c.tipo)}</span><span class="q">${out?"Esgotado":fixa?`Obrigatória · ${vagas}`:vagas}</span></button>`};
+    let corpo;
+    if(vazio)corpo=`<div class="notice" role="alert">As carnes do seu grupo esgotaram. Fale com a Letícia.</div>
+      <a class="btn btn-gold btn-wide" target="_blank" rel="noopener" href="https://wa.me/${LETICIA}?text=${encodeURIComponent(`Olá, Letícia! Quero inscrever a família ${sobrenome(st.nome)} (${n} pessoas para a carne) no Culto da Virada, mas as carnes do nosso grupo esgotaram.`)}">Falar com a Letícia</a>`;
+    else if(o.f==="6mais")corpo=`<div class="ngroup">Ave natalina</div><div class="meats">${card(o.ave,1,true,true)}</div>
+      <div class="ngroup" style="margin-top:18px">Mais 1 carne pequena</div><div class="meats">${o.lista.map(c=>card(c,2,st.carne2===c.tipo)).join("")}</div>`;
+    else corpo=`<div class="meats">${o.lista.map(c=>card(c,1,st.carne===c.tipo)).join("")}</div>`;
+    h=`<div class="step"><div class="stepno">3 de 3</div><h3>${o.f==="6mais"?"Quais carnes vocês levam?":"Qual carne vocês levam?"}</h3>
+    <p class="small" style="margin:-14px 0 20px">${esc(o.dica)} Sua família conta como <b>${n}</b> ${n===1?"pessoa":"pessoas"} para a carne.</p>
     ${st.aviso?`<div class="notice" role="alert">${esc(st.aviso)}</div>`:""}
-    <div class="meats">${cards}</div><div class="err" id="e-carne"></div>
-    <p class="summary">${esc([...st.nomesA,...st.nomesC].join(", "))}<br>Família <b>${esc(sobrenome(st.nome))}</b> · <b>${st.adultos}</b> ${st.adultos>1?"adultos":"adulto"}${st.criancas?` e <b>${st.criancas}</b> ${st.criancas>1?"crianças":"criança"}`:""} · WhatsApp <b>${esc(fone(st.whats))}</b></p>
-    <button class="btn btn-gold btn-wide" id="send">Confirmar inscrição</button><div class="err" id="e-send"></div>
+    ${corpo}<div class="err" id="e-carne"></div>
+    <p class="summary">${esc([...st.nomesA,...st.nomesB,...st.nomesC].join(", "))}<br>Família <b>${esc(sobrenome(st.nome))}</b> · ${grupos(st.adultos,st.c48,st.c04)}${st.pag&&st.pag.ativo?` · Valor <b>${brl(valorDe(st.adultos,st.c48))}</b>`:""} · WhatsApp <b>${esc(fone(st.whats))}</b></p>
+    ${vazio?"":`<button class="btn btn-gold btn-wide" id="send">Confirmar inscrição</button><div class="err" id="e-send"></div>`}
     <button class="back" id="back">Voltar e corrigir</button></div>`}
   if(st.step===8)h=`<div class="step"><div class="spinner" aria-label="Enviando"></div><p class="small" style="text-align:center">Guardando o lugar da sua família…</p></div>`;
   if(st.step===2){const r=st.res,v=total(),pg=st.pag&&st.pag.ativo,nomeF=sobrenome(r.nome||st.nome);
-    const zap=`https://wa.me/5561984589268?text=${encodeURIComponent(`Olá, Letícia! Inscrição ${r.id} (Família ${nomeF}) do Culto da Virada.`)}`;
+    const zap=`https://wa.me/${LETICIA}?text=${encodeURIComponent(`Olá, Letícia! Inscrição ${r.id} (Família ${nomeF}) do Culto da Virada.`)}`;
     let pay="";
     if(pg&&r.pago)pay=`<div class="pix paid"><h4>Pagamento confirmado</h4><p>Recebemos ${brl(v)}. Está tudo certo para a virada.</p></div>`;
-    else if(pg&&st.pag.checkout)pay=`<div class="pix"><h4>Falta o pagamento</h4><div class="val">${brl(v)}</div>
+    else if(pg&&v>0&&st.pag.checkout)pay=`<div class="pix"><h4>Falta o pagamento</h4><div class="val">${brl(v)}</div>
       <p style="margin-top:0">Pix ou cartão em até 12x, pela InfinitePay.</p>
       ${r.link?`<a class="btn btn-gold btn-wide" style="margin-top:14px" href="${esc(r.link)}">Pagar agora</a>`:(!API_URL?`<button class="btn btn-gold btn-wide" style="margin-top:14px" id="payDemo">Pagar agora</button>`:`<p>O link de pagamento não abriu. <a href="${zap}" target="_blank" rel="noopener">Fale com a Letícia</a> que ela te envia.</p>`)}
       <p>Depois de pagar, você volta para esta página com o ingresso confirmado.</p></div>`;
-    else if(pg)pay=`<div class="pix"><h4>Falta só o Pix</h4><div class="val">${brl(v)}</div>
+    else if(pg&&v>0)pay=`<div class="pix"><h4>Falta só o Pix</h4><div class="val">${brl(v)}</div>
       <div class="key"><code id="pixKey">${esc(st.pag.chave)}</code><button class="btn btn-gold btn-sm" id="copy">Copiar chave</button></div>
       <p>Favorecido: ${esc(st.pag.favorecido)}</p>
       <a class="btn btn-gold btn-wide" style="margin-top:14px" target="_blank" rel="noopener" href="https://wa.me/${esc(st.pag.comprovante)}?text=${encodeURIComponent(`Olá, Letícia! Segue o comprovante do Pix da inscrição ${r.id} (Família ${nomeF}).`)}">Enviar comprovante para a Letícia</a></div>`;
@@ -629,7 +657,7 @@ function render(){let h="";
       <div class="t-top"><span>Culto da Virada · Do Alto</span><span>31/12</span></div>
       <div class="t-route"><span class="from">2026</span><span class="arrow"></span><span class="gold">2027</span></div>
       <div class="t-name">Família ${esc(nomeF)}</div>${r.nomes?`<div class="t-people">${esc(r.nomes)}</div>`:""}
-      <div class="t-grid"><div><div class="k">Pessoas</div><div class="v">${r.adultos!=null?`${r.adultos}+${r.criancas}`:r.pessoas}</div></div><div><div class="k">Leva</div><div class="v">${esc(r.carne)}</div></div><div><div class="k">Pagamento</div><div class="v">${pg?(r.pago?"Pago":"A pagar"):"—"}</div></div></div>
+      <div class="t-grid"><div><div class="k">Pessoas</div><div class="v">${r.adultos+r.c48+r.c04}</div></div><div><div class="k">Leva</div><div class="v">${esc(leva(r))}</div></div><div><div class="k">Pagamento</div><div class="v">${pg&&v>0?(r.pago?"Pago":"A pagar"):"—"}</div></div></div>
     </div><div class="t-stub"><span class="code">${esc(r.id)}</span><span class="barcode" aria-hidden="true"></span></div></div>
     <div class="row"><button class="btn btn-ghost btn-sm" id="save">Salvar ingresso</button><a class="btn btn-ghost btn-sm" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(`Nossa família vai no Culto da Virada "Do Alto"! Ingresso ${r.id}.`)}">Compartilhar</a></div>
     ${pay}</div>`}
@@ -639,15 +667,21 @@ function bind(){
   const fn=$("#f-nome"),fw=$("#f-whats");
   if(fn)fn.oninput=()=>{st.nome=fn.value;err("e-nome","")};
   if(fw)fw.oninput=()=>{st.whats=dig(fw.value).slice(0,11);fw.value=fone(st.whats);err("e-whats","")};
-  document.querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>{const k=b.dataset.k,d=+b.dataset.d;if(d>0&&st.adultos+st.criancas>=st.lugares){err("e-fam",`Restam só ${st.lugares} lugares.`);return}err("e-fam","");st[k]=clamp(st[k]+d,k==="adultos"?1:0,20);st.pessoas=st.adultos+st.criancas;$("#o-"+k).textContent=st[k]});
-  document.querySelectorAll("[data-meat]").forEach(b=>b.onclick=()=>{const c=st.carnes.find(m=>m.tipo===b.dataset.meat);if(c.restantes<=0){err("e-carne","Essa já esgotou. Escolha outra.");return}st.carne=c.tipo;document.querySelectorAll("[data-meat]").forEach(y=>y.setAttribute("aria-pressed",y===b));err("e-carne","")});
-  const nx=$("#next");if(nx)nx.onclick=()=>{let ok=true;if(st.nome.trim().length<3)ok=err("e-nome","Escreva seu nome.")&&ok;if(!(st.whats.length===10||st.whats.length===11))ok=err("e-whats","Confira o número com DDD.")&&ok;if(!ok)return;if(st.adultos+st.criancas>st.lugares){err("e-fam",`Restam só ${st.lugares} lugares.`);return}fitNames();st.step=3;st.aviso="";render();toForm()};
+  document.querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>{const k=b.dataset.k,d=+b.dataset.d;
+    if(d>0&&k!=="c04"&&pc()>=st.lugares){err("e-fam",`Restam só ${st.lugares} lugares.`);return}
+    err("e-fam","");st[k]=clamp(st[k]+d,k==="adultos"?1:0,20);$("#o-"+k).textContent=st[k];$("#pcInfo").innerHTML=infoFamilia()});
+  document.querySelectorAll("[data-meat]").forEach(b=>b.onclick=()=>{if(b.dataset.fixa)return;
+    const c=st.carnes.find(m=>m.tipo===b.dataset.meat);if(c.restantes<=0){err("e-carne","Essa já esgotou. Escolha outra.");return}
+    if(b.dataset.slot==="2")st.carne2=c.tipo;else st.carne=c.tipo;
+    document.querySelectorAll(`[data-meat][data-slot="${b.dataset.slot}"]`).forEach(y=>y.setAttribute("aria-pressed",y===b));err("e-carne","")});
+  const nx=$("#next");if(nx)nx.onclick=()=>{let ok=true;if(st.nome.trim().length<3)ok=err("e-nome","Escreva seu nome.")&&ok;if(!(st.whats.length===10||st.whats.length===11))ok=err("e-whats","Confira o número com DDD.")&&ok;if(!ok)return;if(pc()>st.lugares){err("e-fam",`Restam só ${st.lugares} lugares.`);return}fitNames();st.step=3;st.aviso="";render();toForm()};
   const bk=$("#back");if(bk)bk.onclick=()=>{st.step=3;render();toForm()};
   const bk3=$("#back3");if(bk3)bk3.onclick=()=>{st.step=0;render();toForm()};
-  document.querySelectorAll("[data-nt]").forEach(x=>x.oninput=()=>{(x.dataset.nt==="a"?st.nomesA:st.nomesC)[+x.dataset.ni]=x.value;x.classList.remove("bad");err("e-nomes","")});
+  document.querySelectorAll("[data-nt]").forEach(x=>x.oninput=()=>{st[GRUPOS[x.dataset.nt].nomes][+x.dataset.ni]=x.value;x.classList.remove("bad");err("e-nomes","")});
   const n3=$("#next3");if(n3)n3.onclick=()=>{let bad=null;document.querySelectorAll("[data-nt]").forEach(x=>{if(x.value.trim().length<2){x.classList.add("bad");bad=bad||x}});
     if(bad){err("e-nomes","Preencha o nome de todas as pessoas.");bad.focus();return}st.step=1;st.aviso="";render();toForm()};
-  const sd=$("#send");if(sd)sd.onclick=()=>{if(!st.carne){err("e-carne","Escolha uma carne para continuar.");return}send()};
+  const sd=$("#send");if(sd)sd.onclick=()=>{if(!st.carne){err("e-carne","Escolha uma carne para continuar.");return}
+    if(faixa(pc())==="6mais"&&!st.carne2){err("e-carne","Escolha a carne pequena para continuar.");return}send()};
   const cp=$("#copy");if(cp)cp.onclick=()=>{const k=st.pag.chave;const ok=()=>{cp.textContent="Copiada";setTimeout(()=>cp.textContent="Copiar chave",1800)};
     try{navigator.clipboard.writeText(k).then(ok,()=>sel())}catch(e){sel()}};
   const pd=$("#payDemo");if(pd)pd.onclick=async()=>{pd.textContent="Abrindo a InfinitePay…";await new Promise(r=>setTimeout(r,900));st.res.pago=true;st.res.voltou=true;render();toForm()};
@@ -657,15 +691,24 @@ function sel(){const r=document.createRange();r.selectNodeContents($("#pixKey"))
 function toForm(){$("#inscricao").scrollIntoView({behavior:reduce?"auto":"smooth"})}
 
 async function send(){
-  const body={responsavel:st.nome.trim(),whatsapp:st.whats,adultos:st.adultos,criancas:st.criancas,nomes_adultos:st.nomesA.map(x=>x.trim()),nomes_criancas:st.nomesC.map(x=>x.trim()),carne:st.carne};
+  const body={responsavel:st.nome.trim(),whatsapp:st.whats,adultos:st.adultos,criancas_4a8:st.c48,criancas_ate4:st.c04,
+    nomes_adultos:st.nomesA.map(x=>x.trim()),nomes_4a8:st.nomesB.map(x=>x.trim()),nomes_ate4:st.nomesC.map(x=>x.trim()),carne:st.carne,carne2:st.carne2};
   st.step=8;render();
   try{let j;
-    if(!API_URL){await new Promise(r=>setTimeout(r,800));const c=st.carnes.find(m=>m.tipo===st.carne);
-      if(c.restantes<=0)j={ok:false,erro:"esgotado",carnes:st.carnes};else{c.restantes--;j={ok:true,id:"VIR-"+String(40+Math.floor(Math.random()*50)).padStart(4,"0")}}}
+    if(!API_URL){await new Promise(r=>setTimeout(r,800));const ch=[st.carne,st.carne2].filter(Boolean).map(t=>st.carnes.find(m=>m.tipo===t));
+      const esg=ch.find(c=>!c||c.restantes<=0);
+      if(esg)j={ok:false,erro:"esgotado",qual:esg&&esg.tipo,carnes:st.carnes};
+      else{ch.forEach(c=>c.restantes--);j={ok:true,id:"VIR-"+String(40+Math.floor(Math.random()*50)).padStart(4,"0"),valor:valorDe(st.adultos,st.c48)}}}
     else j=await (await fetch(API_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(body)})).json();
-    if(j.ok||(j.erro==="duplicado"&&j.id)){st.res={id:j.id,existente:!j.ok,nome:j.nome||st.nome,pessoas:j.pessoas||st.pessoas,adultos:j.adultos!=null?j.adultos:st.adultos,criancas:j.criancas!=null?j.criancas:st.criancas,carne:j.carne||st.carne,valor:j.valor,pago:!!j.pago,link:j.link||"",nomes:j.nomes||[...st.nomesA,...st.nomesC].join(", ")};st.step=2;render();toForm();if(j.ok)setTimeout(confetti,350);return}
+    if(j.ok||(j.erro==="duplicado"&&j.id)){
+      st.res={id:j.id,existente:!j.ok,nome:j.nome||st.nome,adultos:j.adultos??st.adultos,c48:j.criancas_4a8??st.c48,c04:j.criancas_ate4??st.c04,
+        carne:j.carne||st.carne,carne2:j.carne2??st.carne2,valor:j.valor,pago:!!j.pago,link:j.link||"",nomes:j.nomes||[...st.nomesA,...st.nomesB,...st.nomesC].join(", ")};
+      st.step=2;render();toForm();if(j.ok)setTimeout(confetti,350);return}
     if(j.erro==="lotado"){st.lugares=j.lugares;st.step=0;render();err("e-fam",j.lugares>0?`Restam só ${j.lugares} lugares. Ajuste o número de pessoas.`:"As vagas acabaram.");return}
-    if(j.erro==="esgotado"){st.carnes=j.carnes||st.carnes;st.aviso=`As vagas de ${st.carne} acabaram agora há pouco. Escolha outra.`;st.carne="";st.step=1;render();return}
+    if(j.erro==="esgotado"){st.carnes=j.carnes||st.carnes;if(j.qual===st.carne)st.carne="";if(j.qual===st.carne2)st.carne2="";
+      st.aviso=`As vagas de ${j.qual||"uma das carnes"} acabaram agora há pouco. Escolha outra.`;st.step=1;render();return}
+    if(j.erro==="carne_invalida"){st.carnes=j.carnes||st.carnes;st.carne=st.carne2="";
+      st.aviso="Essa escolha de carne não vale para o tamanho da sua família. Escolha de novo.";st.step=1;render();return}
     throw 0;
   }catch(e){st.step=1;render();err("e-send","Não deu para enviar. Confira a internet e toque em Confirmar de novo.")}
 }
@@ -675,7 +718,7 @@ async function retorno(){
   box.innerHTML=`<div class="step"><div class="spinner" aria-label="Conferindo"></div><p class="small" style="text-align:center">Conferindo o pagamento…</p></div>`;toForm();
   const j=await (await fetch(API_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({acao:"confirmar",order_nsu:id,transaction_nsu:q.get("transaction_nsu")||"",slug:q.get("slug")||""})})).json();
   if(!j.ok)return false;
-  st.nome=j.nome;st.res={id:j.id,nome:j.nome,pessoas:j.pessoas,adultos:j.adultos,criancas:j.criancas,carne:j.carne,valor:j.valor,pago:!!j.pago,link:j.link||"",nomes:j.nomes||"",voltou:true};st.step=2;
+  st.nome=j.nome;st.res={id:j.id,nome:j.nome,adultos:+j.adultos||0,c48:+j.criancas_4a8||0,c04:+j.criancas_ate4||0,carne:j.carne,carne2:j.carne2||"",valor:j.valor,pago:!!j.pago,link:j.link||"",nomes:j.nomes||"",voltou:true};st.step=2;
   history.replaceState(null,"",location.pathname);return true;
 }
 load().then(async()=>{try{await retorno()}catch(e){}render();if(st.step===2)toForm()}).catch(()=>{box.innerHTML=`<div class="step"><h3>Não carregou</h3><p class="small">Confira sua internet e tente de novo.</p><button class="btn btn-gold" onclick="location.reload()">Tentar de novo</button></div>`});
