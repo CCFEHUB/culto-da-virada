@@ -130,6 +130,8 @@ a{color:inherit}
 .how ol{list-style:none;padding:0;margin:44px 0 0;display:grid;gap:0;max-width:560px}
 .how li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:18px 0;border-top:1px solid var(--line);font-size:17px}
 .how li:last-child{border-bottom:1px solid var(--line)}
+.how li .precos-how{display:flex;flex-direction:column;gap:4px;margin-top:10px;font-size:15px;color:var(--bege-areia)}
+.how li .precos-how b{font-family:var(--f-ui);font-size:15px;font-weight:600;color:var(--dourado-brilho)}
 .how li b{font-family:var(--f-display);font-weight:800;color:var(--dourado-brilho);font-size:22px;line-height:1.1}
 .reveal{transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.1,1)}
 .js .reveal.pre{opacity:.001;transform:translateY(28px)}
@@ -433,7 +435,8 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
     <ol class="reveal">
       <li><b>1</b><span>Seu nome, WhatsApp e quantos adultos e crianças vão.</span></li>
       <li><b>2</b><span>A carne que sua família vai levar para a ceia.</span></li>
-      <li><b>3</b><span>Pronto. Você recebe o ingresso da família.</span></li>
+      <li><b>3</b><span>O pagamento, por Pix ou cartão em até 12x.<small class="precos-how"><span>Adultos e acima de 8 anos <b>R$ 30</b></span><span>Crianças de 4 a 8 anos <b>R$ 15</b></span><span>Até 4 anos <b>não pagam</b></span></small></span></li>
+      <li><b>4</b><span>Pronto. Você recebe o ingresso da família.</span></li>
     </ol>
     <div class="showcase reveal" id="showcase">
       <div class="ticket" aria-label="Exemplo de ingresso">
@@ -441,7 +444,7 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
           <div class="t-top"><span>Culto da Virada · Do Alto</span><span>Exemplo</span></div>
           <div class="t-route"><span class="from">2026</span><span class="arrow"></span><span class="gold">2027</span></div>
           <div class="t-name">Família Oliveira</div>
-          <div class="t-grid"><div><div class="k">Pessoas</div><div class="v">4</div></div><div><div class="k">Leva</div><div class="v">Pernil</div></div><div><div class="k">Data</div><div class="v">31/12</div></div></div>
+          <div class="t-grid"><div><div class="k">Pessoas</div><div class="v">4</div></div><div><div class="k">Leva</div><div class="v">Pernil</div></div><div><div class="k">Pagamento</div><div class="v">Pago</div></div></div>
         </div>
         <div class="t-stub"><span class="code">VIR-0042</span><span class="barcode" aria-hidden="true"></span></div>
       </div>
