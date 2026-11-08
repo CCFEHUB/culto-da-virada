@@ -304,7 +304,7 @@ footer .brand{display:block;font-size:26px;color:var(--bege-claro);margin-bottom
 <section class="count" aria-labelledby="t-count">
   <h2 id="t-count" class="reveal">Faltam para 2027</h2>
   <div class="clock reveal" id="clock" role="timer"><div><b id="cd">00</b><span>dias</span></div><div><b id="ch">00</b><span>horas</span></div><div><b id="cm">00</b><span>min</span></div><div><b id="cs">00</b><span>seg</span></div></div>
-  <div class="proof reveal" id="proof" hidden><i aria-hidden="true"></i><span>Restam <b id="nFam">0</b> de <span id="nLim">136</span> lugares<span id="proofDemo"> (exemplo)</span></span></div>
+  <div class="proof reveal" id="proof" hidden><i aria-hidden="true"></i><span>Restam <b id="nFam">0</b> de <span id="nLim">130</span> lugares<span id="proofDemo"> (exemplo)</span></span></div>
 </section>
 <div class="band" aria-hidden="true"><div class="track"><span>Do Alto ✦ 2027 ✦ Salmo 121 ✦ Do Alto ✦ 2027 ✦ Salmo 121 ✦</span><span>Do Alto ✦ 2027 ✦ Salmo 121 ✦ Do Alto ✦ 2027 ✦ Salmo 121 ✦</span></div></div>
 
@@ -469,7 +469,7 @@ const API_URL = "https://script.google.com/macros/s/AKfycbzPanMwb6ugDvWIXc40eFL5
 // Usados só no modo de teste. Com API_URL preenchida, carnes e Pix vêm do Code.gs.
 const TESTE = {
   carnes:[{tipo:"Ave natalina (peru ou chester)",grupo:"ave",restantes:4},{tipo:"Costelinha 3 kg",grupo:"pequena",restantes:2},{tipo:"Pernil",grupo:"grande",restantes:0},{tipo:"Tender 2 kg",grupo:"pequena",restantes:3},{tipo:"Lagarto recheado 2 kg",grupo:"pequena",restantes:1}],
-  pagamento:{ativo:true,valor:20,checkout:true},limite:136,lugares:88
+  pagamento:{ativo:true,valor:20,checkout:true},limite:130,lugares:88
 };
 /* ======================================================== */
 
@@ -565,7 +565,7 @@ document.querySelectorAll(".reveal").forEach(el=>{if(el.getBoundingClientRect().
 // Faixas de idade:
 //   a = adultos e crianças acima de 8 anos (inteira)
 //   b = crianças de 4 a 8 anos (meia)
-//   c = crianças até 4 anos (não pagam, não contam para a carne nem para os 136 lugares)
+//   c = crianças até 4 anos (não pagam, não contam para a carne nem para os 130 lugares)
 const GRUPOS={
   a:{k:"adultos",nomes:"nomesA",rot:"Adultos e crianças acima de 8 anos",dica:"Valor inteiro, contando você",min:1,ph:"Pessoa"},
   b:{k:"c48",nomes:"nomesB",rot:"Crianças de 4 a 8 anos",dica:"Pagam meia",min:0,ph:"Criança"},
@@ -605,7 +605,7 @@ function infoFamilia(){const n=pc(),v=valorDe(st.adultos,st.c48);
   return`Para a carne: <b>${n}</b> ${n===1?"pessoa":"pessoas"}${st.pag&&st.pag.ativo?` · Valor: <b>${brl(v)}</b>`:""}`}
 
 function render(){let h="";
-  if(st.step===0&&st.lugares<=0)h=`<div class="step"><h3>Inscrições encerradas</h3><p class="small">Todos os 136 lugares foram preenchidos. Fale com a Letícia se precisar de ajuda.</p></div>`;
+  if(st.step===0&&st.lugares<=0)h=`<div class="step"><h3>Inscrições encerradas</h3><p class="small">Todos os 130 lugares foram preenchidos. Fale com a Letícia se precisar de ajuda.</p></div>`;
   else if(st.step===0){const cont=(t,last)=>{const G=GRUPOS[t];
       return`<div class="counter"${last?"":` style="margin-bottom:10px"`}><span class="lbl">${G.rot}<small>${G.dica}</small></span><div class="ctl"><button type="button" aria-label="Menos uma pessoa: ${G.rot}" data-k="${G.k}" data-d="-1">−</button><output id="o-${G.k}">${st[G.k]}</output><button type="button" aria-label="Mais uma pessoa: ${G.rot}" data-k="${G.k}" data-d="1">+</button></div></div>`};
     h=`<div class="step"><div class="stepno">1 de 3</div><h3>Sua família</h3>
